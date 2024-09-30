@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoogieInc -projects</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .nav {
+            background-color: #35424a;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        .nav .company-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #e8491d;
+        }
+        .hero {
+            height: 100vh;
+            background-image: url('https://img.freepik.com/premium-photo/man-woman-looking-computer-screen-with-words-technology-them_1314756-2906.jpg?size=626&ext=jpg&ga=GA1.1.618536639.1727540601&semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .project {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project h2 {
+            color: #35424a;
+        }
+        .feedback {
+            background: #e8491d;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .feedback h2 {
+            text-align: center;
+        }
+        .testimonial {
+            background: white;
+            color: #333;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media(max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .nav-links li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="company-name">BoogieInc</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="patnerships.html">Partnerships</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Our Projects</h1>
+    </header>
+
+    <div class="container">
+        <section class="project">
+            <h2>Facial Recognition and Intruder Detection</h2>
+            <p>We developed and deployed a machine learning model for facial recognition and intruder detection using Python. This cutting-edge solution enhances security measures by accurately identifying authorized personnel and detecting potential security breaches.</p>
+        </section>
+
+        <section class="project">
+            <h2>SokoYangu - Green Supplies Marketplace</h2>
+            <p>SokoYangu is a web-based application that connects customers with suppliers of green supplies. This platform facilitates sustainable commerce by making eco-friendly products more accessible to consumers while supporting green initiatives.</p>
+        </section>
+
+        <section class="project">
+            <h2>TADSON Traffic Data Analysis</h2>
+            <p>We conducted an in-depth analysis of traffic data for TADSON, a prominent car company. This project involved examining their market reach and usage across various parts of the country, providing valuable insights into their performance compared to competing brands.</p>
+        </section>
+
+        <section class="feedback">
+            <h2>Customer Feedback</h2>
+            <div class="testimonial">
+                <p>"The facial recognition system implemented by BoogieInc has revolutionized our security protocols.Their work is commendablr" - Uhuru Ongata ,Security Manager</p>
+            </div>
+            <div class="testimonial">
+                <p>"SokoYangu has transformed how we source our green supplies. It's user-friendly and efficient." -Maureen Kimemia,Eco-Store Owner</p>
+            </div>
+            <div class="testimonial">
+                <p>"The insights provided by the traffic data analysis have been invaluable for our marketing strategy. Excellent work!" - Hamaisi Amadi ,TADSON Marketing Director</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BoogieInc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoogieInc-patnerships</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .nav {
+            background-color: #35424a;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        .nav .company-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #e8491d;
+        }
+        .hero {
+            height: 100vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBodQhwJps5fEfBD5lZKiId7yVhPNTdP7e6h6OLFw_qqxvA_LFsoxNMJM3Qg&s');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .partnership {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .partnership:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .partnership h2 {
+            color: #35424a;
+        }
+        .partner {
+            background: white;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media(max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .nav-links li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="company-name">BoogieInc</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="company.html">Company</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="patnerships.html">Partnerships</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Our Partnerships</h1>
+    </header>
+
+    <div class="container">
+        <section class="partnership">
+            <h2>Data Science Partnerships</h2>
+            <p>Our data science partnerships enable us to deliver cutting-edge analytics solutions and derive actionable insights for our clients.</p>
+            
+            <div class="partner">
+                <h3>Hawk AI</h3>
+                <p>Hawk AI specializes in advanced machine learning algorithms. Their expertise helps us implement predictive modeling and forecasting systems, enhancing our clients' decision-making processes.</p>
+            </div>
+            
+            <div class="partner">
+                <h3>Neto group</h3>
+                <p>Neto group provides robust big data processing capabilities. This partnership allows us to handle and analyze massive datasets efficiently, uncovering valuable patterns and trends for our clients.</p>
+            </div>
+        </section>
+
+        <section class="partnership">
+            <h2>Cyber Security Alliances</h2>
+            <p>Our cybersecurity alliances bring together top-tier security experts and innovative technologies to protect our clients from evolving digital threats.</p>
+            
+            <div class="partner">
+                <h3>Uhuruwetu network</h3>
+                <p>Uhuruwetu network offers state-of-the-art network and infrastructure security solutions. This partnership enhances our ability to safeguard our clients' digital assets and sensitive information.</p>
+            </div>
+            
+            <div class="partner">
+                <h3>SecPro</h3>
+                <p>SecPro specializes in advanced threat detection and response. Their cutting-edge tools and expertise allow us to provide proactive security measures and rapid incident response for our clients.</p>
+            </div>
+        </section>
+
+        <section class="partnership">
+            <h2>Web Development Collaborations</h2>
+            <p>Our web development partnerships enable us to create robust, scalable, and user-friendly web solutions for our clients.</p>
+            
+            <div class="partner">
+                <h3>BimaFusion</h3>
+                <p>BimaFusion excels in comprehensive web application development. This collaboration allows us to deliver end-to-end web solutions that meet our clients' diverse needs.</p>
+            </div>
+            
+            <div class="partner">
+                <h3>TechMobi Designs</h3>
+                <p>TechMobi Designs specializes in responsive and mobile-first web design. Through this partnership, we ensure our clients' web presence is optimized for all devices and screen sizes.</p>
+            </div>
+        </section>
+
+        <section class="partnership">
+            <h2>E-Learning Partnerships</h2>
+            <p>Our e-learning partnerships connect us with educational technology innovators, allowing us to develop and implement effective digital learning solutions.</p>
+            
+            <div class="partner">
+                <h3>Ubunifu Innovators</h3>
+                <p>Ubunifu Innovators develops custom Learning Management Systems (LMS). This partnership enables us to provide tailored e-learning platforms that meet the specific needs of various industries and educational institutions.</p>
+            </div>
+            
+            <div class="partner">
+                <h3>Cool Aid </h3>
+                <p>Cool Aid excel in developing engaging, interactive course content. Their expertise helps us deliver immersive learning experiences that enhance knowledge retention and user engagement.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your IT Consultancy Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

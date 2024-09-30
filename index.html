@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoogieInc IT Consultancy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="company-name">BoogieInc</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="patnerships.html">patnerships</a></li>
+                <li><a href="contacts.html">contacts</a></li>
+                <li><a href="projects.html">projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>BoogieInc.</h1>
+            <h2>Transforming the world through technology</h2><br>
+            <p>We specialize in solving real world problems through innovation<br>
+            ,invention and customer approved IT services to bridge the gap <br>
+        between the growing business needs and the resources available to solve them.</p>
+            <div class="button-container">
+                <button class="btn" id="btn1" onclick="location.href='company.html'">About us</button>
+                <button class="btn" id="btn2" onclick="location.href='projects.html'">projects</button>
+                <button class="btn" id="btn3" onclick="location.href='contacts.html'">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024 BoogieInc. All Rights Reserved.</p>
+        <ul class="social-media">
+            <li><a href="https://www.facebook.com/BoogieInc/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/BoogieInc/"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://medium.com/BoogieInc"><i class="fab fa-medium-m"></i> Medium</a></li>
+            <li><a href="https://www.reddit.com/r/BoogieInc/"><i class="fab fa-reddit"></i> Reddit</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach((button, index) => {
+                setTimeout(() => {
+                    button.style.opacity = '1';
+                }, (index + 1) * 1000);
+            });
+        });
+    </script>
+</body>
+</html>
